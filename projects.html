@@ -2,20 +2,30 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <link rel="icon" href="./static/images/favicon.ico">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#000000">
+  <!-- Metadata for the HTML document -->
+  <meta charset="utf-8"> <!-- Sets the character encoding to UTF-8 -->
+  <link rel="icon" href="./static/images/favicon.ico"> <!-- Links to the favicon that appears in the browser tab -->
+  <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- Sets the viewport for responsive design -->
+  <meta name="theme-color" content="#000000"> <!-- Sets the theme color for the browser -->
+
+  <!-- Title of the webpage, displayed in the browser tab -->
   <title>Eddy UWAMBAJE</title>
+
+  <!-- Link to external stylesheet for custom styles -->
   <link href="./static/css/styles.css" rel="stylesheet">
 </head>
 
 <body>
+  <!-- Root container where the React app will render -->
   <div id="root">
+    <!-- Simulated browser window UI -->
     <div class="browser">
       <div class="browser-window">
-        <div class="browser-options"><span class="close-button"><svg stroke="currentColor" fill="currentColor"
-              stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+        <!-- Header section of the simulated browser window -->
+        <div class="browser-options">
+          <!-- Close button -->
+          <span class="close-button"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+              height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M8 4c.367 0 .721.048 1.063.145a3.943 3.943 0 0 1 1.762 1.031 3.944 3.944 0 0 1 1.03 1.762c.097.34.145.695.145 1.062 0 .367-.048.721-.145 1.063a3.94 3.94 0 0 1-1.03 1.765 4.017 4.017 0 0 1-1.762 1.031C8.72 11.953 8.367 12 8 12s-.721-.047-1.063-.14a4.056 4.056 0 0 1-1.765-1.032A4.055 4.055 0 0 1 4.14 9.062 3.992 3.992 0 0 1 4 8c0-.367.047-.721.14-1.063a4.02 4.02 0 0 1 .407-.953A4.089 4.089 0 0 1 5.98 4.546a3.94 3.94 0 0 1 .957-.401A3.89 3.89 0 0 1 8 4z">
               </path>
@@ -29,8 +39,13 @@
               <path
                 d="M8 4c.367 0 .721.048 1.063.145a3.943 3.943 0 0 1 1.762 1.031 3.944 3.944 0 0 1 1.03 1.762c.097.34.145.695.145 1.062 0 .367-.048.721-.145 1.063a3.94 3.94 0 0 1-1.03 1.765 4.017 4.017 0 0 1-1.762 1.031C8.72 11.953 8.367 12 8 12s-.721-.047-1.063-.14a4.056 4.056 0 0 1-1.765-1.032A4.055 4.055 0 0 1 4.14 9.062 3.992 3.992 0 0 1 4 8c0-.367.047-.721.14-1.063a4.02 4.02 0 0 1 .407-.953A4.089 4.089 0 0 1 5.98 4.546a3.94 3.94 0 0 1 .957-.401A3.89 3.89 0 0 1 8 4z">
               </path>
-            </svg></span></div>
+            </svg></span>
+        </div>
+
+        <!-- File name and links for navigation -->
         <div class="file-name"><a href="./">eddy-uwambaje-portfolio </a></div>
+
+        <!-- Browser menu with links to different sections of the portfolio -->
         <div class="file-name-menu"><a class="" href="./">
             <div class="browser-menu"><span class="purple"><svg stroke="currentColor" fill="currentColor"
                   stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -40,6 +55,7 @@
                 </svg></span>
               <p>Home</p>
             </div>
+            <!--  Active projects link  -->
           </a><a class="active" href="./projects.html" aria-current="page">
             <div class="browser-menu"><span class="green"><svg stroke="currentColor" fill="currentColor"
                   stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +65,10 @@
                 </svg></span>
               <p class="linkActive">Projects</p>
             </div>
-          </a></div>
+          </a>
+        </div>
+
+        <!-- Sidebar with panel options for switching views -->
         <div class="panel-options"><span class="panel-icon"><svg stroke="currentColor" fill="currentColor"
               stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
               <g>
@@ -84,11 +103,18 @@
               </g>
             </svg></span></div>
       </div>
+
+      <!-- Main content area (projects, info, etc.) -->
       <div class="app">
         <div class="iconbar">
-          <a href="./static/resume.pdf"  class="icon-button" style="border-left: 3px solid #00d8ff" download>
+          <a href="./static/resume.pdf" class="icon-button" style="border-left: 3px solid #00d8ff" download>
             <span>
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em"><path d="M13.968 3.76l-2.976-2.96c-0.256-0.256-0.576-0.385-0.928-0.385l-4.895-0.016c0 0 0 0 0 0-0.352 0-0.689 0.144-0.944 0.385-0.239 0.256-0.385 0.592-0.385 0.944v0.88h-0.88c-0.352 0-0.688 0.144-0.944 0.385s-0.385 0.576-0.385 0.944v10.352c0 0.736 0.592 1.327 1.327 1.327h7.872c0.736 0 1.327-0.592 1.327-1.327v-0.88h0.88c0.736 0 1.327-0.592 1.327-1.327v-7.377c-0.016-0.352-0.144-0.689-0.399-0.944zM10.752 1.76l2.24 2.24h-2.016c-0.112 0-0.225-0.096-0.225-0.224v-2.016zM11.296 14.272c0 0.256-0.208 0.464-0.464 0.464h-7.856c-0.256 0-0.464-0.208-0.464-0.464v-10.352c0-0.128 0.048-0.239 0.144-0.32 0.081-0.096 0.208-0.144 0.32-0.144h0.88v8.608c0 0.736 0.592 1.327 1.327 1.327h6.129v0.88zM13.040 12.544h-7.872c-0.256 0-0.464-0.208-0.464-0.464v-10.352c0-0.128 0.048-0.239 0.144-0.336 0.079-0.081 0.208-0.128 0.32-0.128 0 0 0 0 0 0l4.72 0.016v2.528c0 0.592 0.48 1.072 1.072 1.072h2.528v7.2c0.016 0.256-0.192 0.464-0.448 0.464z"></path></svg>
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em"
+                width="1em">
+                <path
+                  d="M13.968 3.76l-2.976-2.96c-0.256-0.256-0.576-0.385-0.928-0.385l-4.895-0.016c0 0 0 0 0 0-0.352 0-0.689 0.144-0.944 0.385-0.239 0.256-0.385 0.592-0.385 0.944v0.88h-0.88c-0.352 0-0.688 0.144-0.944 0.385s-0.385 0.576-0.385 0.944v10.352c0 0.736 0.592 1.327 1.327 1.327h7.872c0.736 0 1.327-0.592 1.327-1.327v-0.88h0.88c0.736 0 1.327-0.592 1.327-1.327v-7.377c-0.016-0.352-0.144-0.689-0.399-0.944zM10.752 1.76l2.24 2.24h-2.016c-0.112 0-0.225-0.096-0.225-0.224v-2.016zM11.296 14.272c0 0.256-0.208 0.464-0.464 0.464h-7.856c-0.256 0-0.464-0.208-0.464-0.464v-10.352c0-0.128 0.048-0.239 0.144-0.32 0.081-0.096 0.208-0.144 0.32-0.144h0.88v8.608c0 0.736 0.592 1.327 1.327 1.327h6.129v0.88zM13.040 12.544h-7.872c-0.256 0-0.464-0.208-0.464-0.464v-10.352c0-0.128 0.048-0.239 0.144-0.336 0.079-0.081 0.208-0.128 0.32-0.128 0 0 0 0 0 0l4.72 0.016v2.528c0 0.592 0.48 1.072 1.072 1.072h2.528v7.2c0.016 0.256-0.192 0.464-0.448 0.464z">
+                </path>
+              </svg>
             </span>
           </a>
           <a href="tel:+250785850860" target="_blank" rel="noreferrer" class="icon-button"><span><svg
@@ -122,11 +148,16 @@
                 stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 5H0V4h16v1zm0 8H0v-1h16v1zm0-4.008H0V8h16v.992z"></path>
               </svg></span></a></div>
+
+        <!-- Navigation buttons (Home, Projects) -->
         <div class="icon-bar-navigation">
           <div class="hide-menu"><a class="" href="./"><button>/* HOME */</button></a><a aria-current="page"
               class="active" href="./projects.html"><button class="linkActive">/* PROJECTS */</button></a></div>
         </div>
+
+        <!-- Explorer section simulating a file explorer (like in VS Code) -->
         <div class="explorer">
+          <!-- Explorer header -->
           <div class="header">
             <p>EXPLORER</p><span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
                 height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -135,6 +166,8 @@
                 </path>
               </svg></span>
           </div>
+
+            <!-- Files section listing different files and projects -->
           <div class="files">
             <div class="top">
               <div class="divider shadow"><span><svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -156,8 +189,8 @@
                         <div class="simplebar-content" style="padding: 0px;"><a aria-current="page" class="active"
                             href="./">
                             <div class="folder home">
-                              <span class="purple"><img src="./static/images/jsx.png"
-                                  height="15px" width="18px" /></span>
+                              <span class="purple"><img src="./static/images/jsx.png" height="15px"
+                                  width="18px" /></span>
                               <p>home.jsx</p>
                             </div>
                           </a><a class="linkActive" href="./projects.html">
@@ -171,40 +204,42 @@
                               <p>Projects</p>
                             </div>
                           </a>
+
+                          <!-- List of individual projects -->
                           <div class="projects">
                             <a class="" href="./projects.html#ebind">
                               <div class="folder">
-                                <span class="purple"><img src="./static/images/js.png"
-                                  height="15px" width="15px" /></span>
-                                  </svg></span>
+                                <span class="purple"><img src="./static/images/js.png" height="15px"
+                                    width="15px" /></span>
+                                </svg></span>
                                 <p>educationBind.js</p>
                               </div>
                             </a>
-                            <a class=""  href="./projects.html#astrik">
-                              <div class="folder"><span class="purple"><img src="./static/images/html.png"
-                                  height="15px" width="15px" /></span>
-                                  </svg></span>
+                            <a class="" href="./projects.html#astrik">
+                              <div class="folder"><span class="purple"><img src="./static/images/html.png" height="15px"
+                                    width="15px" /></span>
+                                </svg></span>
                                 <p>astrik.html</p>
                               </div>
                             </a>
-                            <a class=""  href="./projects.html#gobi">
-                              <div class="folder"><span class="purple"><img src="./static/images/css.png"
-                                  height="15px" width="15px" /></span>
-                                  </svg></span>
+                            <a class="" href="./projects.html#gobi">
+                              <div class="folder"><span class="purple"><img src="./static/images/css.png" height="15px"
+                                    width="15px" /></span>
+                                </svg></span>
                                 <p>gobi.css</p>
                               </div>
                             </a>
-                            <a class=""  href="./projects.html#music">
-                              <div class="folder"><span class="purple"><img src="./static/images/ts.png"
-                                  height="15px" width="15px" /></span>
-                                  </svg></span>
+                            <a class="" href="./projects.html#music">
+                              <div class="folder"><span class="purple"><img src="./static/images/ts.png" height="15px"
+                                    width="15px" /></span>
+                                </svg></span>
                                 <p>musicapp.ts</p>
                               </div>
                             </a>
-                            <a class=""  href="./projects.html#sillion">
-                              <div class="folder"><span class="purple"><img src="./static/images/py.png"
-                                height="15px" width="15px" /></span>
-                                  </svg></span>
+                            <a class="" href="./projects.html#sillion">
+                              <div class="folder"><span class="purple"><img src="./static/images/py.png" height="15px"
+                                    width="15px" /></span>
+                                </svg></span>
                                 <p>sillionafrica.py</p>
                               </div>
                             </a>
@@ -223,6 +258,8 @@
                 </div>
               </div>
             </div>
+
+              <!-- Bottom of the explorer with a divider and external link -->
             <div class="bottom"><a href="https://marketplace.visualstudio.com/items?itemName=tonybaloney.vscode-pets"
                 target="_blank" rel="noreferrer">
                 <div class="divider"><span><svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -253,12 +290,11 @@
                     <div class="nested">
                       <p><span class="code">return (</span></p><br>
                       <div class="nested">
-                        
+
                         <div class="project-preview-container" id="ebind">
                           <div class="active-line">{/* PROJECT 1 */}</div>
                           <div class="project-container">
-                            <div class="project-img"><img
-                                src="./static/images/projects/ebind.png"
+                            <div class="project-img"><img src="./static/images/projects/ebind.png"
                                 alt="Screenshot of Education Bind" class="img-popup"></div>
                             <div class="project-info">
                               <div class="project-content">
@@ -273,29 +309,31 @@
                                     src="https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white"
                                     alt="MUI Badge"
                                     data-canonical-src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&amp;logoColor=fff&amp;style=for-the-badge"
-                                    style="max-width: 100%;"> 
-                                     <img
+                                    style="max-width: 100%;">
+                                  <img
                                     src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
                                     alt="JavaScript Badge"
                                     data-canonical-src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&amp;logoColor=000&amp;style=for-the-badge"
-                                    style="max-width: 100%;"> 
-                                    <img
+                                    style="max-width: 100%;">
+                                  <img
                                     src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
                                     alt="React Badge"
                                     data-canonical-src="https://img.shields.io/badge/React-61DAFB?logo=react&amp;logoColor=000&amp;style=for-the-badge"
                                     style="max-width: 100%;">
-                                    <img
+                                  <img
                                     src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
                                     alt="Nodejs Badge"
                                     data-canonical-src="https://img.shields.io/badge/Node.js-339933?logo=node.js&amp;logoColor=fff&amp;style=for-the-badge"
                                     style="max-width: 100%;">
-                                  </div>
-                                <div class="dots">. . . .</div>
-                                <div class="text">
-                                  <p>System for collecting students data and also help manage the whole organisation’s activities through data collection</p>
                                 </div>
                                 <div class="dots">. . . .</div>
-                                <div class="links"><a class="project-page-link" target="_blank" href="http://ebind-home.vercel.app">
+                                <div class="text">
+                                  <p>System for collecting students data and also help manage the whole organisation’s
+                                    activities through data collection</p>
+                                </div>
+                                <div class="dots">. . . .</div>
+                                <div class="links"><a class="project-page-link" target="_blank"
+                                    href="http://ebind-home.vercel.app">
                                     <p>VIEW &gt;</p>
                                   </a><a href="https://github.com/education-bind/ebind-home" target="_blank"
                                     rel="noreferrer" class="project-repo-link"><span><svg stroke="currentColor"
@@ -314,8 +352,7 @@
                         <div class="project-preview-container" id="astrik">
                           <div class="active-line">{/* PROJECT 2 */}</div>
                           <div class="project-container">
-                            <div class="project-img"><img
-                              src="./static/images/projects/astrik.png"
+                            <div class="project-img"><img src="./static/images/projects/astrik.png"
                                 alt="Screenshot of Astrik" class="img-popup"></div>
                             <div class="project-info">
                               <div class="project-content">
@@ -324,41 +361,38 @@
                                 <div class="dots">. . . .</div>
                                 <div class="tech-stack"><img
                                     src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"
-                                    alt="express js Badge"
-                                    style="max-width: 100%;">
-                                     <img
+                                    alt="express js Badge" style="max-width: 100%;">
+                                  <img
                                     src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&amp;logoColor=fff&amp;style=for-the-badge"
                                     alt="CSS3 Badge"
                                     data-canonical-src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&amp;logoColor=fff&amp;style=for-the-badge"
-                                    style="max-width: 100%;"> 
-                                    <img
-                                    src="https://img.shields.io/badge/ejs-%23B4CA65.svg?style=for-the-badge&logo=ejs&logoColor=black"
-                                    alt="EJS Badge"
-                                    style="max-width: 100%;"> 
-                                    <img
-                                    src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-                                    alt="JavaScript Badge"
                                     style="max-width: 100%;">
-                                     <img
+                                  <img
+                                    src="https://img.shields.io/badge/ejs-%23B4CA65.svg?style=for-the-badge&logo=ejs&logoColor=black"
+                                    alt="EJS Badge" style="max-width: 100%;">
+                                  <img
+                                    src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+                                    alt="JavaScript Badge" style="max-width: 100%;">
+                                  <img
                                     src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
                                     alt="Node.js Badge"
                                     data-canonical-src="https://img.shields.io/badge/Node.js-393?logo=nodedotjs&amp;logoColor=fff&amp;style=for-the-badge"
-                                    style="max-width: 100%;"> 
-                                    <img
+                                    style="max-width: 100%;">
+                                  <img
                                     src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
-                                    alt="Mongo DB Badge"
-                                    style="max-width: 100%;"> </div>
+                                    alt="Mongo DB Badge" style="max-width: 100%;"> </div>
                                 <div class="dots">. . . .</div>
                                 <div class="text">
                                   <p>privately owned Engineering Consulting Company</p>
                                 </div>
                                 <div class="dots">. . . .</div>
-                                <div class="links"><a class="project-page-link" target="_blank" href="https://www.astrikltd.com">
+                                <div class="links"><a class="project-page-link" target="_blank"
+                                    href="https://www.astrikltd.com">
                                     <p>VIEW &gt;</p>
-                                  </a><a href="https://github.com/uwambajeddy/astrik" target="_blank"
-                                    rel="noreferrer" class="project-repo-link"><span><svg stroke="currentColor"
-                                        fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em"
-                                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                                  </a><a href="https://github.com/uwambajeddy/astrik" target="_blank" rel="noreferrer"
+                                    class="project-repo-link"><span><svg stroke="currentColor" fill="currentColor"
+                                        stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                           d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z">
                                         </path>
@@ -372,8 +406,7 @@
                         <div class="project-preview-container" id="gobi">
                           <div class="active-line">{/* PROJECT 3 */}</div>
                           <div class="project-container">
-                            <div class="project-img"><img
-                              src="./static/images/projects/gobi.png"
+                            <div class="project-img"><img src="./static/images/projects/gobi.png"
                                 alt="Screenshot of Gobi" class="img-popup"></div>
                             <div class="project-info">
                               <div class="project-content">
@@ -382,38 +415,35 @@
                                 <div class="dots">. . . .</div>
                                 <div class="tech-stack"><img
                                     src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white"
-                                    alt="Postgress Badge"
-                                    style="max-width: 100%;"> <img
+                                    alt="Postgress Badge" style="max-width: 100%;"> <img
                                     src="https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white"
-                                    alt="Sequelize Badge"
-                                    style="max-width: 100%;"> <img
+                                    alt="Sequelize Badge" style="max-width: 100%;"> <img
                                     src="https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white"
-                                    alt="Jest Badge"
-                                    style="max-width: 100%;"> 
-                                    <img
+                                    alt="Jest Badge" style="max-width: 100%;">
+                                  <img
                                     src="https://img.shields.io/badge/Node.js-393?logo=nodedotjs&amp;logoColor=fff&amp;style=for-the-badge"
-                                    alt="Node.js Badge"
-                                    style="max-width: 100%;">
-                                    <img
+                                    alt="Node.js Badge" style="max-width: 100%;">
+                                  <img
                                     src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"
-                                    alt="Next js Badge"
-                                    style="max-width: 100%;">
-                                    <img
+                                    alt="Next js Badge" style="max-width: 100%;">
+                                  <img
                                     src="https://img.shields.io/badge/Context--Api-000000?style=for-the-badge&logo=react"
-                                    alt="Context API Badge"
-                                    style="max-width: 100%;">
-                                  </div>
-                                <div class="dots">. . . .</div>
-                                <div class="text">
-                                  <p>Gobi is a platform designed to connect individuals and businesses with reliable drivers for ride-sharing and delivery services. It allows users to earn money by offering rides or deliveries, while ensuring convenience, safety, and affordability for those in need of transportation or delivery solutions.</p>
+                                    alt="Context API Badge" style="max-width: 100%;">
                                 </div>
                                 <div class="dots">. . . .</div>
-                                <div class="links"><a class="project-page-link" target="_blank" href="https://www.gobi.rw">
+                                <div class="text">
+                                  <p>Gobi is a platform designed to connect individuals and businesses with reliable
+                                    drivers for ride-sharing and delivery services. It allows users to earn money by
+                                    offering rides or deliveries, while ensuring convenience, safety, and affordability
+                                    for those in need of transportation or delivery solutions.</p>
+                                </div>
+                                <div class="dots">. . . .</div>
+                                <div class="links"><a class="project-page-link" target="_blank"
+                                    href="https://www.gobi.rw">
                                     <p>VIEW &gt;</p>
-                                  </a><a href="#" target="_blank"
-                                    rel="noreferrer" class="project-repo-link"><span><svg stroke="currentColor"
-                                        fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em"
-                                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                                  </a><a href="#" target="_blank" rel="noreferrer" class="project-repo-link"><span><svg
+                                        stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                        height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                           d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z">
                                         </path>
@@ -424,12 +454,11 @@
                             </div>
                           </div>
                         </div>
-                      
+
                         <div class="project-preview-container" id="music">
                           <div class="active-line">{/* PROJECT 4 */}</div>
                           <div class="project-container">
-                            <div class="project-img"><img
-                              src="./static/images/projects/musicapp.png"
+                            <div class="project-img"><img src="./static/images/projects/musicapp.png"
                                 alt="Screenshot of Music app" class="img-popup"></div>
                             <div class="project-info">
                               <div class="project-content">
@@ -438,14 +467,15 @@
                                 <div class="dots">. . . .</div>
                                 <div class="tech-stack"><img
                                     src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"
-                                    alt="Figma Badge"
-                                    style="max-width: 100%;"> </div>
+                                    alt="Figma Badge" style="max-width: 100%;"> </div>
                                 <div class="dots">. . . .</div>
                                 <div class="text">
-                                  <p>Developed a sleek, user-friendly music streaming app interface with intuitive navigation, playlist management, and playback controls.</p>
+                                  <p>Developed a sleek, user-friendly music streaming app interface with intuitive
+                                    navigation, playlist management, and playback controls.</p>
                                 </div>
                                 <div class="dots">. . . .</div>
-                                <div class="links"><a class="project-page-link" target="_blank" href="https://www.figma.com/file/yoAFJPwP7jtpdK2QdHxA5C/Music-Application?node-id=0%3A1&t=IAIkZbFDcRlY3Ppl-1">
+                                <div class="links"><a class="project-page-link" target="_blank"
+                                    href="https://www.figma.com/file/yoAFJPwP7jtpdK2QdHxA5C/Music-Application?node-id=0%3A1&t=IAIkZbFDcRlY3Ppl-1">
                                     <p>VIEW &gt;</p>
                                   </a></div>
                               </div>
@@ -455,8 +485,7 @@
                         <div class="project-preview-container" id="sillion">
                           <div class="active-line">{/* PROJECT 5 */}</div>
                           <div class="project-container">
-                            <div class="project-img"><img
-                              src="./static/images/projects/sillion.png"
+                            <div class="project-img"><img src="./static/images/projects/sillion.png"
                                 alt="Screenshot of Music app" class="img-popup"></div>
                             <div class="project-info">
                               <div class="project-content">
@@ -464,38 +493,37 @@
                                 <p class="identifier">{/* SILLION AFRICA */}</p>
                                 <div class="dots">. . . .</div>
                                 <div class="tech-stack"><img
-                                  src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
-                                  alt="HTML 5 Badge"
-                                  style="max-width: 100%;">
-                                   <img
-                                  src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&amp;logoColor=fff&amp;style=for-the-badge"
-                                  alt="CSS3 Badge"
-                                  data-canonical-src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&amp;logoColor=fff&amp;style=for-the-badge"
-                                  style="max-width: 100%;"> 
-                            
+                                    src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+                                    alt="HTML 5 Badge" style="max-width: 100%;">
                                   <img
-                                  src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-                                  alt="JavaScript Badge"
-                                  style="max-width: 100%;">
-                                   </div>
+                                    src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&amp;logoColor=fff&amp;style=for-the-badge"
+                                    alt="CSS3 Badge"
+                                    data-canonical-src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&amp;logoColor=fff&amp;style=for-the-badge"
+                                    style="max-width: 100%;">
+
+                                  <img
+                                    src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+                                    alt="JavaScript Badge" style="max-width: 100%;">
+                                </div>
                                 <div class="dots">. . . .</div>
                                 <div class="text">
                                   <p>Business consulting and advisory company website</p>
                                 </div>
                                 <div class="dots">. . . .</div>
-                                <div class="links"><a class="project-page-link" target="_blank" href="https://sillionafrica.com">
+                                <div class="links"><a class="project-page-link" target="_blank"
+                                    href="https://sillionafrica.com">
                                     <p>VIEW &gt;</p>
                                   </a>
                                   <a href="https://github.com/uwambajeddy/sillionafrica" target="_blank"
-                                  rel="noreferrer" class="project-repo-link"><span><svg stroke="currentColor"
-                                      fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em"
-                                      width="1em" xmlns="http://www.w3.org/2000/svg">
-                                      <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z">
-                                      </path>
-                                    </svg></span>
-                                  <p>GITHUB &gt;</p>
-                                </a>
+                                    rel="noreferrer" class="project-repo-link"><span><svg stroke="currentColor"
+                                        fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em"
+                                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z">
+                                        </path>
+                                      </svg></span>
+                                    <p>GITHUB &gt;</p>
+                                  </a>
                                 </div>
                               </div>
                             </div>
@@ -572,6 +600,7 @@
             </a></div>
 
         </div>
+          <!-- Status bar on the right side -->
         <div class="status-right">
           <div class="block"><a href="https://reactjs.org/" target="_blank" rel="noreferrer"
               class="extension"><span><svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -619,8 +648,8 @@
               </svg></span></div>
         </div>
       </div>
-    </div>
-  </div>
+    </div><!-- End of browser section -->
+  </div><!-- End of root div -->
 </body>
 
 </html>
