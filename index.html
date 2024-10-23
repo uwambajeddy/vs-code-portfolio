@@ -2,18 +2,29 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <link rel="icon" href="./static/images/favicon.ico">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#000000">
+  <!-- Metadata for the HTML document -->
+  <meta charset="utf-8"> <!-- Sets the character encoding to UTF-8 -->
+  <link rel="icon" href="./static/images/favicon.ico"> <!-- Links to the favicon that appears in the browser tab -->
+  <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- Sets the viewport for responsive design -->
+  <meta name="theme-color" content="#000000"> <!-- Sets the theme color for the browser -->
+
+  <!-- Title of the webpage, displayed in the browser tab -->
   <title>Eddy UWAMBAJE</title>
+
+  <!-- Link to external stylesheet for custom styles -->
   <link href="./static/css/styles.css" rel="stylesheet">
 </head>
 
-<div id="root">
-  <div class="browser">
-    <div class="browser-window">
-      <div class="browser-options"><span class="close-button"><svg stroke="currentColor" fill="currentColor"
+<body>
+  <!-- Root container where the React app will render -->
+  <div id="root">
+    <!-- Simulated browser window UI -->
+    <div class="browser">
+      <div class="browser-window">
+        <!-- Header section of the simulated browser window -->
+        <div class="browser-options">
+          <!-- Close button -->
+        <span class="close-button"><svg stroke="currentColor" fill="currentColor"
             stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M8 4c.367 0 .721.048 1.063.145a3.943 3.943 0 0 1 1.762 1.031 3.944 3.944 0 0 1 1.03 1.762c.097.34.145.695.145 1.062 0 .367-.048.721-.145 1.063a3.94 3.94 0 0 1-1.03 1.765 4.017 4.017 0 0 1-1.762 1.031C8.72 11.953 8.367 12 8 12s-.721-.047-1.063-.14a4.056 4.056 0 0 1-1.765-1.032A4.055 4.055 0 0 1 4.14 9.062 3.992 3.992 0 0 1 4 8c0-.367.047-.721.14-1.063a4.02 4.02 0 0 1 .407-.953A4.089 4.089 0 0 1 5.98 4.546a3.94 3.94 0 0 1 .957-.401A3.89 3.89 0 0 1 8 4z">
@@ -29,7 +40,10 @@
               d="M8 4c.367 0 .721.048 1.063.145a3.943 3.943 0 0 1 1.762 1.031 3.944 3.944 0 0 1 1.03 1.762c.097.34.145.695.145 1.062 0 .367-.048.721-.145 1.063a3.94 3.94 0 0 1-1.03 1.765 4.017 4.017 0 0 1-1.762 1.031C8.72 11.953 8.367 12 8 12s-.721-.047-1.063-.14a4.056 4.056 0 0 1-1.765-1.032A4.055 4.055 0 0 1 4.14 9.062 3.992 3.992 0 0 1 4 8c0-.367.047-.721.14-1.063a4.02 4.02 0 0 1 .407-.953A4.089 4.089 0 0 1 5.98 4.546a3.94 3.94 0 0 1 .957-.401A3.89 3.89 0 0 1 8 4z">
             </path>
           </svg></span></div>
-      <div class="file-name"><a href="./">eddy-uwambaje-portfolio</a></div>
+      <!-- File name and links for navigation -->
+      <div class="file-name"><a href="./">eddy-uwambaje-portfolio </a></div>
+
+      <!-- Browser menu with links to different sections of the portfolio -->
       <div class="file-name-menu"><a aria-current="page" class="active" href="./">
           <div class="browser-menu"><span class="purple"> <img src="./static/images/html.png" height="15px"
                 width="15px" /></span>
@@ -79,6 +93,7 @@
             </g>
           </svg></span></div>
     </div>
+    <!-- Main content area (projects, info, etc.) -->
     <div class="app">
       <div class="iconbar">
         <a href="./static/resume.pdf" class="icon-button" style="border-left: 3px solid #00d8ff" download>
@@ -126,9 +141,10 @@
               <path d="M16 5H0V4h16v1zm0 8H0v-1h16v1zm0-4.008H0V8h16v.992z"></path>
             </svg></span></a></div>
       <div class="icon-bar-navigation">
-        <div class="show-menu"><a class="linkActive" href="/"><button>/* HOME */</button></a><a aria-current="page" 
+        <div class="show-menu"><a class="linkActive" href="./"><button>/* HOME */</button></a><a aria-current="page" 
             href="./projects.html"><button c>/* PROJECTS */</button></a></div>
       </div>
+      <!-- Explorer section simulating a file explorer (like in VS Code) -->
       <div class="explorer">
         <div class="header">
           <p>EXPLORER</p><span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
@@ -138,6 +154,7 @@
               </path>
             </svg></span>
         </div>
+        <!-- Files section listing different files and projects -->
         <div class="files">
           <div class="top">
             <div class="divider shadow"><span><svg stroke="currentColor" fill="currentColor" stroke-width="0"
@@ -365,9 +382,11 @@
           <div class="simplebar-scrollbar"
             style="height: 450px; transform: translate3d(0px, 0px, 0px); display: block;">
           </div>
-        </div>
+        </div> <!-- Closing project preview container -->
       </div>
-    </div>
+    </div><!-- End of explorer section -->
+
+    <!-- Status bar section -->
     <div class="status-bar">
       <div class="status-left">
         <div class="block"><span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
@@ -417,6 +436,7 @@
             <p>0</p>
           </a></div>
       </div>
+       <!-- Status bar on the right side -->
       <div class="status-right">
         <div class="block"><a href="https://reactjs.org/" target="_blank" rel="noreferrer" class="extension"><span><svg
                 stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em"
@@ -464,8 +484,8 @@
             </svg></span></div>
       </div>
     </div>
-  </div>
-</div>
+  </div><!-- End of browser section -->
+</div><!-- End of root div -->
 </body>
 <script src="./static/js/script.js"></script>
 </html>
