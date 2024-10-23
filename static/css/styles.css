@@ -189,8 +189,7 @@ input[type="submit"] {
 }
 .icon-bar-navigation .show-menu {
   align-items: center;
-  display: block;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 15px;
   padding: 5%;
