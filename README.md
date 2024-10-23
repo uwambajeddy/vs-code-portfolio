@@ -36,29 +36,34 @@ This portfolio website is designed to resemble a code editor interface, providin
 
 The project is organized as follows:
 
+```bash
 .
 ├── index.html
 ├── projects.html
-└── static
-    └── images
-    └── js
-    └── css
-        └── styles.css
+├── static/
+│ └── images
+│ └── js
+│ └── css
+│    └── styles.css
+└── README.md
+```
+
 
 
 - `index.html`: The main page of the portfolio
 - `projects.html`: A dedicated page showcasing various projects
 - `static/css/styles.css`: Contains custom CSS styles for the project
+- `static/css/script.js`: Contains custom javascript for the project
 
 ## Project Showcase
 
 The portfolio includes a dedicated projects page showcasing various projects:
 
-1. MealMind: An open-source app for meal planning, targeting people with picky eating habits and ADHD.
-2. WeLoveMovies: A movie database and search application.
-3. GrubDash: A restaurant reservation application.
-4. Advent Of Code: Solutions to 25 coding challenges.
-5. Flashcards: An application for teachers to create study decks and students to use them.
+1. Education bind
+2. Astrik LTD
+3. Gobi
+4. Music App UX/UI
+5. Sillion Africa
 
 Each project includes:
 - A brief description
@@ -71,11 +76,11 @@ To set up this project locally:
 
 1. Clone the repository:
    ```
-   git clone [repository-url]
+   git clone [https://github.com/uwambajeddy/vs-code-portfolio]
    ```
 2. Navigate to the project directory:
    ```
-   cd [project-directory]
+   cd [vs-code-portfolio]
    ```
 3. Run the index.html file with `Live Server` extension:
 
